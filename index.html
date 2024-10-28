@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sitesi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #b20000; /* Koyu kırmızı */
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #ff4d4d; /* Açık kırmızı */
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background: #cc0000; /* Koyu kırmızı tonuna hover efekti */
+        }
+        section {
+            padding: 20px;
+        }
+        .thank-you, .atatürk-honoring, .comments-section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Türklerin Kullandığı Alfabeler Afişimiz hakkında</h1>
+</header>
+
+<nav>
+    <a href="#atatürk-honoring">Atatürk'ü Anma</a>
+    <a href="#thank-you">Teşekkür</a>
+    <a href="#comments">Yorumlar</a>
+</nav>
+
+<section id="atatürk-honoring" class="atatürk-honoring">
+    <h2>Atatürk'ü Anma</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Ataturk1930s.jpg/220px-Ataturk1930s.jpg" alt="Atatürk" style="max-width: 100%; height: auto;">
+    <h2>ATATÜRK’ÜN GENÇLİĞE HİTABESİ</h2>
+    <p>Ey Türk gençliği! Birinci vazifen; Türk istiklalini, Türk cumhuriyetini, ilelebet muhafaza ve müdafaa etmektir.</p>
+    <p>Mevcudiyetinin ve istikbalinin yegâne temeli budur. Bu temel, senin en kıymetli hazinendir. İstikbalde dahi seni bu hazineden mahrum etmek isteyecek dâhilî ve haricî bedhahların olacaktır. Bir gün, istiklal ve cumhuriyeti müdafaa mecburiyetine düşersen, vazifeye atılmak için içinde bulunacağın vaziyetin imkân ve şeraitini düşünmeyeceksin. Bu imkân ve şerait, çok namüsait bir mahiyette tezahür edebilir. İstiklal ve cumhuriyetine kastedecek düşmanlar, bütün dünyada emsali görülmemiş bir galibiyetin mümessili olabilirler. Cebren ve hile ile aziz vatanın bütün kaleleri zapt edilmiş, bütün tersanelerine girilmiş, bütün orduları dağıtılmış ve memleketin her köşesi bilfiil işgal edilmiş olabilir. Bütün bu şeraitten daha elim ve daha vahim olmak üzere, memleketin dâhilinde iktidara sahip olanlar, gaflet ve dalalet ve hatta hıyanet içinde bulunabilirler. Hatta bu iktidar sahipleri, şahsi menfaatlerini müstevlilerin siyasi emelleriyle tevhit edebilirler. Millet, fakruzaruret içinde harap ve bitap düşmüş olabilir.</p>
+    <p>Ey Türk istikbalinin evladı! İşte, bu ahval ve şerait içinde dahi vazifen, Türk istiklal ve cumhuriyetini kurtarmaktır. Muhtaç olduğun kudret, damarlarındaki asil kanda mevcuttur.</p>
+    <p><strong>Mustafa Kemal Atatürk</strong></p>
+</section>
+
+<section id="thank-you" class="thank-you">
+    <h2>Teşekkür</h2>
+    <p>Öncelikle, bu afişi hazırlarken çok keyif aldığımızı belirtmek isterim. Bu çalışmanın her aşamasında katkı sağlayan ve emeği geçen tüm arkadaşlarımıza içtenlikle teşekkür ediyorum.</p>
+    <p>Çalışmada emeği geçenler:</p>
+    <ul>
+        <li>Ahmet ELELE</li>
+        <li>Ahmet Enes AKBULUT</li>
+        <li>Emre SÖZER</li>
+        <li>Osman Dorukhan ÜNAL</li>
+        <li>Ömer Faruk ACAR</li>
+        <li>Ramazan KORKMAZ</li>
+        <li>Temel Mahmut MEYDAN</li>
+    </ul>
+    <p>Bu afiş, Türklerin kullandığı alfabeleri tanıtmak amacıyla hazırlanmış olup, bu süreçte karşılaştığımız zorluklara rağmen hep birlikte çalışarak harika bir iş çıkardık. Emeği geçen herkese tekrar teşekkür ederim.</p>
+    <p>Özellikle, bu afişin yönetiminde katkı sağlayan Ömer Faruk ACAR'a, teknik destek veren Emre SÖZER'e ve website tasarımı konusunda bize yardımcı olan Temel Mahmut MEYDAN'a ayrıca teşekkür etmek isterim.</p>
+</section>
+
+<section id="comments" class="comments-section">
+    <h2>Yorumlar</h2>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;
+            this.page.identifier = window.location.pathname;
+        };
+        (function() { // Disqus embed script
+            var d = document, s = d.createElement('script');
+            s.src = 'https://turklerin-kullandigi-alfabeler-afisimiz-hakkinsa.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+<script id="dsq-count-scr" src="//turklerin-kullandigi-alfabeler-afisimiz-hakkinsa.disqus.com/count.js" async></script>
+
+</body>
+</html>
